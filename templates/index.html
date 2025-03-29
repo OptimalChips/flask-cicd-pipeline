@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>About Me</h1>
+    <p id="intro">
+      My name is Shlok Jiteshkumar Kakadia, I'm employed at Eifer, a research institute owned by KIT and EDF, and I work in the IT department.
+    </p>
+    <p id="education">
+      I am a 2nd semester computer science student at KIT.
+    </p>
+    <p id="skills">
+      I am proficient in Java, C++, Python, HTML, CSS, JS, Docker, and GitLab.
+    </p>
+    <button id="toggleStyleBtn">Toggle Style</button>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
