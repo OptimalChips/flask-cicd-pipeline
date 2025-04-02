@@ -1,3 +1,3 @@
-document.getElementById('toggleStyleBtn').addEventListener('click', function () {
-  document.querySelector('.container').classList.toggle('alternate');
+document.getElementById('themeToggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark');
 });
