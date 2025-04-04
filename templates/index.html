@@ -1,128 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shlok Kakadia - CV</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shlok Kakadia - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Shlok Jiteshkumar Kakadia</h1>
-            <p class="contact-info">
-                Email: <a href="mailto:shlok.kakadia05@gmail.com">shlok.kakadia05@gmail.com</a> |
-                Phone: (+49) 15781510509 |
-                LinkedIn: <a href="https://www.linkedin.com/in/shlok-jiteshkumar-kakadia-7b2656298" target="_blank">Profile</a>
-            </p>
-            <p class="address">Klosterweg 28 G101, EG, 76131 Karlsruhe, Germany</p>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#extracurriculars">Extracurriculars</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am employed at EIFER, a research institute owned by KIT and EDF, and work in the IT department as a Powershell Script Automation Developer. I manage device records using Windows PowerShell, implement APIs, and automate processes. I also support IT deployment and administrative tasks for over 100 employees.</p>
-        </section>
-        <section id="education">
-            <h2>Educational Background</h2>
-            <article>
-                <h3>The Indian School Bahrain – AISSCE Exam (Grade 10)</h3>
-                <p><strong>Grade:</strong> 1.7</p>
-                <p><strong>Duration:</strong> 12/05/2012 – 03/08/2021</p>
-            </article>
-            <article>
-                <h3>The Indian School Bahrain – SSC Exam (Highschool Diploma)</h3>
-                <p><strong>Grade:</strong> 2.0, with Computer Science: 1.3 (93%)</p>
-                <p><strong>Subjects:</strong> Mathematics, Physics, Chemistry, Computer Science, English</p>
-                <p><strong>Project:</strong> Led a team to create car renting software using Python and SQL.</p>
-                <p><strong>Duration:</strong> 01/04/2021 – 12/05/2023</p>
-            </article>
-            <article>
-                <h3>German Language Course (A1 – B1)</h3>
-                <p><strong>Institution:</strong> Magdeburger Wirtschaftsinformatik (MDWI), Magdeburg</p>
-                <p><strong>Duration:</strong> 01/04/2023 – 11/09/2023</p>
-            </article>
-            <article>
-                <h3>Otto-von-Guericke-Universität, Magdeburg – Studienkolleg (Feststellungsprüfung)</h3>
-                <p><strong>Grade:</strong> 2.1 with Computer Science: 1.0 (Best grade of the year)</p>
-                <p><strong>Subjects:</strong> Mathematics, Physics, Chemistry, Computer Science, German (B2 – C1)</p>
-                <p><strong>Duration:</strong> 18/09/2023 – 01/07/2024</p>
-            </article>
-            <article>
-                <h3>Karlsruhe Institute of Technology – 1st Semester</h3>
-                <p><strong>Modules:</strong> Basic notions of Computer Science, Linear Algebra 1, Programming, Higher Mathematics 1 (Analysis 1)</p>
-                <p><strong>Duration:</strong> 01/10/2024 – 31/03/2025</p>
-            </article>
-        </section>
-        <section id="experience">
-            <h2>Job Experience</h2>
-            <article>
-                <h3>EIFER (European Institute for Energy Research)</h3>
-                <p>Working as a Powershell Script Automation Developer, I manage IT processes including device record keeping, API implementations, and application deployment using tools like Microsoft Autopilot and Intune.</p>
-            </article>
-        </section>
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>English: Native/Bilingual</li>
-                <li>German: C1 (Feststellungsprüfung from Studienkolleg)</li>
-                <li>Gujarati: Native</li>
-                <li>Hindi: Native</li>
-            </ul>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <article>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>HTML5, CSS, JavaScript</li>
-                    <li>Python, C++, JAVA, MySQL</li>
-                    <li>Windows PowerShell</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Microsoft Tools</h3>
-                <ul>
-                    <li>Word, Excel, PowerPoint</li>
-                    <li>Microsoft Autopilot, Microsoft Intune</li>
-                </ul>
-            </article>
-        </section>
-        <section id="extracurriculars">
-            <h2>Extracurriculars</h2>
-            <ul>
-                <li>Cricket: Coached and encouraged young talent; won championships with the school team.</li>
-                <li>Table Tennis: Competed as part of the school team.</li>
-            </ul>
-        </section>
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Learning new programming skills</li>
-                <li>Hiking</li>
-                <li>Playing sports like volleyball</li>
-                <li>Cooking</li>
-                <li>Listening to music</li>
-                <li>Reading classic theatre plays (e.g., Oscar Wilde)</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Shlok Jiteshkumar Kakadia. All rights reserved.</p>
-    </footer>
-    <!-- Button to toggle dark/light theme -->
-    <button id="themeToggle">Toggle Theme</button>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <header class="site-header">
+    <div class="intro-card fade-in">
+      <h1>Shlok Jiteshkumar Kakadia</h1>
+      <p class="subtitle">Computer Science Student at KIT | IT Developer at EIFER</p>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:shlok.kakadia05@gmail.com">shlok.kakadia05@gmail.com</a></p>
+        <p>Phone: (+49) 15781510509</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/shlok-jiteshkumar-kakadia-7b2656298" target="_blank">View Profile</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="cv-content">
+    <section class="cv-section fade-in">
+      <h2>Education</h2>
+
+      <div class="cv-card">
+        <img src="{{ url_for('static', filename='images/ovgu.png') }}" alt="OVGU Magdeburg" class="logo" />
+        <h3>OVGU Magdeburg - Studienkolleg</h3>
+        <p>Feststellungsprüfung with C1-level German. Top grade in Computer Science (1.0).</p>
+        <p><em>2023 - 2024</em></p>
+      </div>
+
+      <div class="cv-card">
+        <img src="{{ url_for('static', filename='images/kit.png') }}" alt="KIT" class="logo" />
+        <h3>Karlsruhe Institute of Technology (KIT)</h3>
+        <p>2nd Semester B.Sc. Computer Science. Modules include Programming, Linear Algebra, Higher Math.</p>
+        <p><em>2024 - Present</em></p>
+      </div>
+
+      <div class="cv-card">
+        <img src="{{ url_for('static', filename='images/indian-school.png') }}" alt="Indian School Bahrain" class="logo" />
+        <h3>Indian School Bahrain</h3>
+        <p>Grade 12 - 93% in CS | Grade 10 - 1.7 GPA</p>
+        <p><em>2012 - 2023</em></p>
+      </div>
+    </section>
+
+    <section class="cv-section fade-in">
+      <h2>Experience</h2>
+      <div class="cv-card">
+        <img src="{{ url_for('static', filename='images/eifer.png') }}" alt="EIFER" class="logo" />
+        <h3>EIFER (IT Department)</h3>
+        <p>Automation Developer - Windows PowerShell, Microsoft Intune, API Scripting</p>
+        <p><em>Present</em></p>
+      </div>
+    </section>
+
+    <section class="cv-section fade-in">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Python</span>
+        <span>C++</span>
+        <span>Java</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>GitLab</span>
+        <span>Docker</span>
+        <span>PowerShell</span>
+      </div>
+    </section>
+
+    <section class="cv-section fade-in">
+      <h2>Languages</h2>
+      <ul>
+        <li>English - Native</li>
+        <li>German - C1</li>
+        <li>Hindi - Native</li>
+        <li>Gujarati - Native</li>
+      </ul>
+    </section>
+
+    <section class="cv-section fade-in">
+      <h2>Extras</h2>
+      <p>Enthusiastic learner. Passionate about clean code, design, and teamwork. Also into sports, hiking, and theatre.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <p>&copy; 2025 Shlok Jiteshkumar Kakadia.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
