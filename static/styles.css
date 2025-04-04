@@ -1,144 +1,114 @@
-/* Reset & Basic Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
-    padding-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #f0f4ff, #e6ecff);
+  color: #333;
+  padding-bottom: 100px;
 }
 
-/* Header */
-header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-.header-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-.header-container .contact-info a,
-.header-container .contact-info span,
-.header-container .address {
-    font-size: 1rem;
+.site-header {
+  background: linear-gradient(135deg, #0a0f3d, #2b47d1);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation */
-nav {
-    background: #333;
-    padding: 10px 0;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-nav ul li a:hover {
-    color: #6a11cb;
+.site-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
-/* Main Content */
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-main section {
-    margin-bottom: 40px;
-}
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #6a11cb;
-    padding-bottom: 5px;
-}
-main article h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #2575fc;
-}
-main ul {
-    list-style: disc inside;
-    margin-left: 20px;
-}
-main p, main li {
-    margin-bottom: 10px;
+.subtitle {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.contact-info a {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-/* Theme Toggle Button */
-#themeToggle {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background: #2575fc;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-}
-#themeToggle:hover {
-    background: #6a11cb;
+.cv-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
 }
 
-/* Dark Theme Styles */
-body.dark {
-    background: #222;
-    color: #ddd;
+.cv-section {
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease forwards;
 }
-body.dark header {
-    background: linear-gradient(135deg, #000428, #004e92);
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2b47d1;
+  padding-bottom: 5px;
 }
-body.dark nav {
-    background: #444;
+
+.cv-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #2b47d1;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
-body.dark main {
-    background: #333;
-    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+
+.logo {
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
-body.dark footer {
-    background: #444;
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-body.dark nav ul li a {
-    color: #ddd;
+
+.skills-list span {
+  background: #2b47d1;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
-body.dark nav ul li a:hover {
-    color: #6a11cb;
+
+ul {
+  list-style: square;
+  padding-left: 20px;
 }
-body.dark #themeToggle {
-    background: #6a11cb;
+
+.site-footer {
+  background: #1b1f3a;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-body.dark #themeToggle:hover {
-    background: #2575fc;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-inline {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 8px;
 }
